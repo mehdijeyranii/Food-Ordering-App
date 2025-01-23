@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import MobileNav from "./MobileNav";
 
 const Header: React.FC = () => {
   return (
@@ -11,6 +12,9 @@ const Header: React.FC = () => {
         >
           MernEats.com
         </Link>
+        <div className="md:hidden">
+          <MobileNav />
+        </div>
       </div>
     </div>
   );
